@@ -40,8 +40,8 @@ public void setup() {
   frameRate(1000.0F);
   strokeCap(SQUARE);
 
-
   drawing();
+  //  drawingSpecial105_52();  // special case for colors that change mid-draw.
 }// setup end
 
 public void draw() {

@@ -154,32 +154,38 @@ public void drawing() {
 
   // Looks right...
   // one tooth over, draw in black.
-  
+
   turn(105, 60, 52-5*2, 8, 0);
-  
+
   // So, it seems that the way the toymaker worked it out, was if you wanted a half-tooth drawing, you
   // just flipped the gear over.
   // I had to re-write my code because of one like this; I didn't think they used fractional teeth.
   // but they did.   Not often though.  You may never encounter this again.
-  
+
   // between the black two black lines, draw in green.
-  
+
   turn(105, 60, 52-5*2, 7.5, 2);
-  
- // and there, the drawing in the booklet, and the drawing this code has done look pretty similar.
- // Should you be brave enough to try an epitrochoid, with the R150 or R144 gear, make the 2nd parameter negative.
- // You might have to scale down to 1.5 or 2 with the scale variable.
- 
- // Enjoy, and leave a note if you find a bug or have an enhancement, or a comment.
- //    -nevin
- 
- 
- 
- 
- 
- 
-  
-  
+
+  // and there, the drawing in the booklet, and the drawing this code has done look pretty similar.
+  // Should you be brave enough to try an epitrochoid, with the R150 or R144 gear, make the 2nd parameter negative.
+  // You might have to scale down to 1.5 or 2 with the scale variable.
+
+  // Enjoy, and leave a note if you find a bug or have an enhancement, or a comment.
+  //    -nevin
+}
+
+public void drawingSpecial105_52() {
+
+  //  This special case of an official spirograph drawing that changes
+  // colours 3 times with the same gear is one that requires some special code.
+  // For completeness, I'll write it.
+  // ooh, it won't be pretty.
+  //
+  // (I suck as a programmer.)
+
+  speed = 5;
+
+  turnSpecial(105, 52, 40, 0, 1);
 }
 
 
