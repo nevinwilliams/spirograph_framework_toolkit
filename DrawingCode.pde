@@ -183,14 +183,14 @@ public void drawingSpecial105_52() {
   //
   // (I suck as a programmer.)
 
-  speed = 5;
+  //speed = 5;
 
   turnSpecial(105, 52, 40, 0, 1);
 }
 
 
 public void drawing1() {
-
+pushMatrix();
 
   float hole = 58;
   float step = 1.7F;
@@ -241,9 +241,11 @@ public void drawing1() {
   hole -= step;
   preSpin(105, 63, hole);
   spin(7, 6, 7, 11);
+  popMatrix();
 }
 
 public void drawing2() {
+  pushMatrix();
   for (int i = 0; i < 3; i++) {
     preSpin(96, 64, (float) (58 - i * 4.5));
     spin(0, 0, 0, 0);
@@ -262,9 +264,11 @@ public void drawing2() {
     preSpin(96, 64, (float) (58 - i * 4.5));
     spin(5, 5, 7, 0);
   }
+  popMatrix();
 }
 
 public void drawing3() {
+  pushMatrix();
   for (int i = 0; i < 9; i++) {
     preSpin(96, 84, 74 - 2 * i);
     spin(0, 10, 10, i);
@@ -274,9 +278,11 @@ public void drawing3() {
     preSpin(96, 84, 73 - 2 * i);
     spin(0, 10, 10, i);
   }
+  popMatrix();
 }
 
 public void drawing4() {
+  pushMatrix();
   for (int i = 0; i < 5; i++) {
     preSpin(105, 30, 25 - i * 2);
     spin(0, 0, 0, 0);
@@ -289,6 +295,7 @@ public void drawing4() {
     preSpin(105, 60, 50 - i * 2);
     spin(0, 10, 10, 0);
   }
+  popMatrix();
 }
 
 public void drawing5() {
@@ -338,7 +345,7 @@ public void drawing6() {
 
 public void drawing7() {
 
-  speed = 4;
+  //speed = 4;
   float step = 2.0F;
 
   for (int i = 0; i < 9; i++) {
@@ -351,7 +358,7 @@ public void drawing7() {
 }
 
 public void drawing8() {
-  speed = 2;
+  //speed = 2;
   for (int i = 0; i < 3; i++) {
     preSpin(105, 60, 45);
     spin(0, 10, 10, 7 + (float) i / 2);
@@ -365,7 +372,7 @@ public void drawing8() {
 
 public void drawing9() {
 
-  speed = 2;
+  //speed = 2;
   for (int i = 0; i < 5; i++) {
     preSpin(96, 24, 18 - 2 * i);
     spin(0, 0, 0, 0);
@@ -390,7 +397,7 @@ public void drawing9() {
 public void drawing10() {
 
   float step = 6;
-  speed = 3;
+  //speed = 3;
   preSpin(96, 63, 63 - step);
   spin(0, 0, 0, 0);
 
@@ -408,7 +415,7 @@ public void drawing10() {
 }
 
 public void drawing11() {
-  speed = 3;
+  //speed = 3;
 
   for (int i = 0; i < 8; i++) {
 
@@ -423,7 +430,7 @@ public void drawing11() {
 }
 
 public void drawing12() {
-  speed = 4;
+  //speed = 4;
   for (int i = 0; i < 26; i++) {
     preSpin(105, 84, 70 - (i * 2));
     spin(6, 7, 7, i * 2);
@@ -431,7 +438,7 @@ public void drawing12() {
 }
 
 public void drawing13() {
-  speed = 4;
+  //speed = 4;
 
   preSpin(105, 24, 5);
   spin(0, 10, 10, 0);
@@ -443,7 +450,7 @@ public void drawing13() {
 }
 
 public void drawing14() {
-  speed = 4;
+  //speed = 4;
   float hole = 62;
   float step = 0;
 
@@ -512,7 +519,7 @@ public void drawing14() {
 
 public void drawing15() {
 
-  speed = 4;
+  //speed = 4;
 
   for (int i = 0; i < 3; i++) {
     preSpin(105, 30, 22 - (2 * i));
@@ -550,13 +557,13 @@ public void drawing16() {
 
     for (int i = 1; i < 4; i += 2) {
       preSpin(96, 72, 65 - i * 2);
-      spin(0, 10, 10, (float) (3 + 6.5 * j));
+      spin(0, 10, 10, (float) (3 + 6 * j));
     }
   }
 }
 
 public void drawing17() {
-  speed = 4;
+  //speed = 4;
 
 
   preSpin(105, 24, 5);
@@ -585,7 +592,7 @@ public void drawing17() {
 }
 
 public void drawing18() {
-  speed = 1;
+  //speed = 1;
   float step = 1.5F;
   preSpin(96, 40, 28 + step);
   spin(0, 0, 0, 0);
@@ -615,7 +622,7 @@ public void drawing19() {
    right and repeat in (Green).
    */
 
-  speed = 3;
+  //speed = 3;
   for (int i = 0; i < 5; i++) {
     preSpin(96, 60, 50 - i * 2);
     spin(0, 10, 10, 0);
@@ -669,7 +676,7 @@ public void drawing22() {
    move 1 tooth right and repeat
    again.
    */
-  speed = 3;
+  //speed = 3;
   for (int i = 0; i < 3; i++) {
     preSpin(96, 30, 25 - i * 2);
     spin(7, 7, 7, 0);
@@ -714,7 +721,7 @@ public void drawing24() {
   /*
     144/96 • 60 • (Red) 1-2-3-4-5-6. move 6 teeth right. (Green) 1-2-3-4-5.
    */
-  speed = 2;
+  //speed = 2;
   for (int i = 0; i < 5; i++) {
     preSpin(96, 60, 50 - i * 2);
     spin(0, 10, 10, 0);
@@ -729,7 +736,7 @@ public void drawing25() {
   /*
         150/105 • 80 •  (Red) 6-8-10-14, (Blue) 18, (Green) 12-16.
    */
-  speed = 3;
+  //speed = 3;
   int[] redHoles = {6, 8, 10, 14};
   int[] blueHoles = {18};
   int[] greenHoles = {12, 16};
@@ -756,7 +763,7 @@ public void drawing26() {
         150/105 • 75 •  (Red) 5-8-11-14, (Blue) 6-9-12-15, (Green) 7-10-13-16.
    */
 
-  speed = 3;
+  //speed = 3;
   int[] redHoles = {5, 8, 11, 14};
   int[] blueHoles = {6, 9, 12, 15};
   int[] greenHoles = {7, 10, 13, 16};
@@ -782,7 +789,7 @@ public void drawing27() {
   /*
 150/105 • 45 • (Green) 1-3-5-7-9-11-13, then draw (Red) 15-13-11-9-7-6-3-1, moving one tooth right for each hole.
    */
-  speed = 4;
+  //speed = 4;
   int iter = 0;
 
   int[] greenHoles = {1, 3, 5, 7, 9, 11, 13};
@@ -875,7 +882,7 @@ public void drawing30() {
    52 •  (Red) 19.
    84 •  (Red) 25.  (I used black)
    */
-  speed = 3;
+  //speed = 3;
   for (int i = 0; i < 8; i++) {
     preSpin(96, 32, 27 - 5 * 2);
     spin(0, 10, 10, i);
@@ -946,7 +953,7 @@ public void drawing33() {
         155/105 • 75 •  (Red) 2-7-10-16-22.
    (Green) 4-13-19-25.  (I changed it to blue)
    */
-  speed = 3;
+  //speed = 3;
   int[] red = {2, 7, 10, 16, 22};
   int[] green = {4, 13, 19, 25};
 
@@ -997,7 +1004,7 @@ public void drawing35() {
    64 • (Red) 3 at mark 3 of ring.  (tooth 8)
    (Blue 1 at mark 3 of ring. (tooth 8)
    */
-  speed = 3;
+  //speed = 3;
   int[] red = {2, 6, 21};
   int[] blue = {4, 23};
 
@@ -1020,7 +1027,7 @@ public void drawing35() {
 public void drawing36() {
 
   /*
-        144/96 • 84 • (Red) 1-14, repeat at Mark 3 of ring (tooth 8).  Then at Mark 2,
+        144/96 • 84 • (Red) 1-14, repeat at Mark 3 of ring (tooth 16).  Then at Mark 2,
    draw (Red) 1-27.
    56 •  (Blue 2-15, move 4 teeth right and draw (Red) 2.
    */
@@ -1029,19 +1036,19 @@ public void drawing36() {
   spin(0, 10, 10, 0);
 
   preSpin(96, 84, 79 - 1);
-  spin(0, 10, 10, 6);
+  spin(0, 10, 10, 16);
 
   preSpin(96, 84, 79 - 14 * 2);
   spin(0, 10, 10, 0);
 
   preSpin(96, 84, 79 - 14 * 2);
-  spin(0, 10, 10, 6);
+  spin(0, 10, 10, 16);
 
   preSpin(96, 84, 79 - 2);
-  spin(0, 10, 10, 3);
+  spin(0, 10, 10, 8);
 
   preSpin(96, 84, 79 - 27 * 2);
-  spin(0, 10, 10, 3);
+  spin(0, 10, 10, 8);
 
   preSpin(96, 56, 51 - 2 * 2);
   spin(7, 7, 7, 0);
@@ -1059,7 +1066,7 @@ public void drawing37() {
    Change color and repeat until you have drawn 8 patterns in each
    of the 4 colors.
    */
-  speed = 1;
+  //speed = 1;
   for (int i = 0; i < 8; i++) {
     preSpin(96, 32, 27);
     spin(0, 10, 10, i);
@@ -1077,7 +1084,7 @@ public void drawing37() {
 
 public void drawing38() {
 
-  speed = 4;
+  //speed = 4;
 
   turn(105, 56, 51, 0, 3);
   turn(105, 84, 79, 0, 3);
@@ -1113,7 +1120,7 @@ public void drawing39() {
 }
 
 public void drawing40() {
-  speed = 4;
+  //speed = 4;
 
   turn(105, 80, 75 - 2, 0, 1);
   turn(105, 80, 75 - 30 * 2, 0, 1);
@@ -1144,7 +1151,7 @@ public void drawing41() {
 
 public void drawing42() {
 
-  speed = 4;
+  //speed = 4;
 
   int[] red = {9, 12, 15, 16};
   int[] blue = {10, 13};
@@ -1176,7 +1183,7 @@ public void drawing43() {
 
 public void drawing44() {
 
-  speed = 3;
+  //speed = 3;
 
   turn(96, 75, 70 - 2, 0, 3);
   turn(96, 75, 70 - 25 * 2, 0, 2);
@@ -1188,7 +1195,7 @@ public void drawing44() {
 
 public void drawing45() {
 
-  speed = 3;
+  //speed = 3;
   int[] black = {15, 16, 18, 22, 23};
   int[] red1 = {3, 4, 5};
   int[] red2 = {15, 18, 22};
@@ -1210,7 +1217,7 @@ public void drawing45() {
 
 public void drawing46() {
 
-  speed = 4;
+  //speed = 4;
   float RT = 105;
 
   turn(RT, 24, 24, 0, 1);
@@ -1227,7 +1234,7 @@ public void drawing46() {
 
 public void drawing47() {
 
-  speed = 5;
+  //speed = 5;
 
   float rt = 105;
 
@@ -1238,7 +1245,7 @@ public void drawing47() {
 
 public void drawing48() {
 
-  speed = 4;
+  //speed = 4;
   float rg = 105;
   float rt = 45;
   float dt = 40;
@@ -1251,7 +1258,7 @@ public void drawing48() {
 
 public void drawing49() {
 
-  speed = 6;
+  //speed = 6;
   float rt = 105;
 
   for (int j = 0; j < 3; j++) {
@@ -1268,7 +1275,7 @@ public void drawing49() {
 }
 
 public void drawing50() {
-  speed = 4;
+  //speed = 4;
 
   float R = 96;
 
@@ -1285,7 +1292,7 @@ public void drawing50() {
 }
 
 public void drawing51() {
-  speed = 3;
+  //speed = 3;
   float R = 105;
   float r = 42;
   float d = 35;
@@ -1296,7 +1303,7 @@ public void drawing51() {
 }
 
 public void drawing52() {
-  speed = 3;
+  //speed = 3;
   float R = 105;
 
   int[] red = {1, 2, 8, 9, 15, 16, 22, 23};
@@ -1311,7 +1318,7 @@ public void drawing52() {
 }
 
 public void drawing53() {
-  speed = 4;
+  //speed = 4;
   float R = 105;
 
   int[] blue = {1, 2, 3, 26, 28};
@@ -1340,7 +1347,7 @@ public void drawing53() {
 
 public void drawing54() {
 
-  speed = 5;
+  //speed = 5;
   float R = 96;
   float r = 52;
   int[] blue = {5, 6, 7};
@@ -1399,7 +1406,7 @@ public void drawing56() {
 }
 
 public void drawing57() {
-  speed = 3;
+  //speed = 3;
   float R = 96;
   int tooth = 0;
   for (int i = 0; i < 3; i++) {
@@ -1426,10 +1433,10 @@ public void drawing58() {
   turn(R, -80, 75, 7, 2);
 }
 
-public void drawing62() {
+public void drawing59() {
 
   scale = 1.5F;
-  speed = 2;
+  //speed = 2;
   turn(144, 72, 72, 0, -1);
   for (int i = 0; i < 9; i++) {
     turn(144, -72, 67, i - 4, 0);
@@ -1459,7 +1466,7 @@ public void drawing61() {
   }
 }
 
-public void drawing63() {
+public void drawing62() {
   fafo = 0;
 
   turn(96, 48, 48, 0, 1);
