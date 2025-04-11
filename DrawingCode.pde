@@ -190,7 +190,7 @@ public void drawingSpecial105_52() {
 
 
 public void drawing1() {
-pushMatrix();
+
 
   float hole = 58;
   float step = 1.7F;
@@ -241,11 +241,11 @@ pushMatrix();
   hole -= step;
   preSpin(105, 63, hole);
   spin(7, 6, 7, 11);
-  popMatrix();
+
 }
 
 public void drawing2() {
-  pushMatrix();
+
   for (int i = 0; i < 3; i++) {
     preSpin(96, 64, (float) (58 - i * 4.5));
     spin(0, 0, 0, 0);
@@ -264,11 +264,11 @@ public void drawing2() {
     preSpin(96, 64, (float) (58 - i * 4.5));
     spin(5, 5, 7, 0);
   }
-  popMatrix();
+ 
 }
 
 public void drawing3() {
-  pushMatrix();
+
   for (int i = 0; i < 9; i++) {
     preSpin(96, 84, 74 - 2 * i);
     spin(0, 10, 10, i);
@@ -278,11 +278,11 @@ public void drawing3() {
     preSpin(96, 84, 73 - 2 * i);
     spin(0, 10, 10, i);
   }
-  popMatrix();
+
 }
 
 public void drawing4() {
-  pushMatrix();
+
   for (int i = 0; i < 5; i++) {
     preSpin(105, 30, 25 - i * 2);
     spin(0, 0, 0, 0);
@@ -295,7 +295,7 @@ public void drawing4() {
     preSpin(105, 60, 50 - i * 2);
     spin(0, 10, 10, 0);
   }
-  popMatrix();
+ 
 }
 
 public void drawing5() {
